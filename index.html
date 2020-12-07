@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>User Persona</title>
+	    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body>
+		<div id="main-file">
+			<!-- Header -->
+				<section id="header">
+					
+					<div id="banner">
+						<div class="container">
+							<div class="row">
+								<div class="col-3 col-12-medium imp-medium">
+
+									<!-- Banner Image -->
+										<a href="#" class="">
+											<img class="border-image"  src="assets/images/banner.png" alt="user image"  /></a>
+
+								</div>
+								<div class="col-7 col-12-medium pad-l-20">
+
+										<div>
+											<h2 id="name" onclick="toggelNameEdit(1)">John Smith</h2>
+											<div id="nameEdit" class="relative" style="display:none">
+												<input type="text" id="nameInput" value="John Smith" />
+												<div class="abs-cls">
+													<span onclick="updateField('name')">
+														<img class="lgic"  src="assets/images/rt.png" alt="Save-Link">
+													</span> <span onclick="toggelNameEdit(0)"><img class="lgic"  src="assets/images/cancel.png" alt="cancel-link" ></span>
+												</div>
+											</div>
+										</div>
+
+										<div>
+											<h2 class="address" id="address" onclick="toggleAddressEdit(1)">Portland, Oregen, USA</h2>
+											<div id="addressEdit" class="relative" style="display: none;">
+												<input type="text" id="addressInput" value="Portland, Oregen, USA" />
+												<div class="abs-cls">
+												<span onclick="updateField('address')"><img class="lgic"  src="assets/images/rt.png" alt="Save-Link" ></span> <span onclick="toggleAddressEdit(0)"><img class="lgic"  src="assets/images/cancel.png" alt="cancel-link"></span>
+											    </div>
+											</div>
+										</div>
+										<div>
+											<h2 class="language" id="language" onclick="toggleLanguageEdit(1)">English</h2>
+											<div id="languageEdit" class="relative"  style="display: none;">
+												<input type="text" id="languageInput" value="English" />
+												<div class="abs-cls">
+												<span onclick="updateField('language')"><img class="lgic"  src="assets/images/rt.png" alt="Save-Link"></span> <span onclick="toggleLanguageEdit(0)"><img class="lgic"  src="assets/images/cancel.png" alt="cancel-link"></span>
+											    </div>
+											</div>
+										</div>
+										<div class="mar-t20">
+											<ul id="skillsList"></ul>
+											<p id="addmore" onclick="toggleMoreSkills(1)">Add Skills</p>
+											
+											<div id="addMoreSec" class="relative" style="display: none;">
+												<input type="text" placeholder="Add Skills" id="skillInput" class="brd-g" value=''/>
+												
+												<select id="eff" >
+														<option value="strong">Strong</option>
+														<option value="expert">Expert</option>
+														<option value="advanced">Advanced</option>
+														<option value="beginner">Beginner</option> 
+												</select>
+												<span  class="abs-cls" onclick="updateField('skills')"><img class="lgic"  src="assets/images/rt.png" alt="Save-Link"></span>
+											
+
+											</div>
+										</div>
+										
+
+								</div>
+								<div class="col-2 col-12-medium text-center pad-t40">
+	
+										<a href="#" class="but-prt">Print this page</a>
+
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+ 
+								<!-- Feature #1 -->
+									
+										<h2>Portfolio  <br>
+										<span class="text-center p-text">PHP, Ruby, Javascript</span></h2>
+										<ul class="ftur">
+											<li><span>NavalPlan,</span> PHP, Ruby</li>
+											<li><span>MyTime,</span> Javascript</li>
+											<li><span>Formidable,</span> PHP, Ruby</li>
+											<li><span>MyTime,</span> Javascript</li>
+											<li><span>Monsoon,</span> ActionScript</li>
+										</ul>
+								
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Feature #2 -->
+									
+										
+										<h2>Experience</h2>
+										<ul class="ftur">
+											
+											<li><span>PHP,</span> 6 years</li>
+											<li><span>Ruby,</span> 7 years</li>
+											<li><span>Javascript,</span> 4 years</li>
+											<li><span>ActionScript,</span> 3 years</li>
+										</ul>
+									
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small ps-rl">
+
+								<!-- Feature #3 -->
+									
+										<h2 class="bn-ab">Sample code and algorithms</h2>
+										<textarea rows="7" cols="25" >
+  										<!DOCTYPE HTML>
+										<html>
+											<head>
+												<title></title>
+											    <meta charset="utf-8" />
+												<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+												<link rel="stylesheet" href="assets/css/main.css" />
+											</head>
+											<body>
+												<div id="main-file">
+
+													<!-- Header -->
+														<section id="header">
+										</textarea>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Feature #4 -->
+									
+										<h2>Availability </h2>
+										<p class="full-p text-center">Full-time</p>
+										<hr>
+										<h2>Preferred environment</h2>
+										<p class="text-center text-size">Git, GitHub, vim, emacs, Jenkins, Mac OSX
+										</p>
+									
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- test-blockquote -->
+				<section id="test-blockquote" class="textimonial">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small pad-b25">
+
+								<!-- test-blockquote #1 -->
+									
+										<h2>The most amazing …</h2><blockquote>
+										<p class="text-sizei">
+											
+
+										… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore<br> 
+										<span class="text-right text-size2">-Martin</span>
+										</p>
+										</blockquote>
+									
+							</div>
+							<div class="col-3 col-6-medium col-12-small pad-b25">
+
+								<!-- test-blockquote #2 -->
+									
+										<h2>In clients I look for …</h2>
+										<blockquote>
+										<p class="text-sizei">
+											
+										… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore 
+										<br> 
+										<span class="text-right text-size2">-Martin</span>
+										</p>
+									    </blockquote>
+
+							</div>
+							<!-- test-blockquote #3 -->
+							<div class="col-3 col-6-medium col-12-small pad-b25">
+							</div>
+							<div class="col-3 col-6-medium col-12-small pad-b25">
+
+								<!-- test-blockquote #4 -->
+									
+										<h2>Note</h2>
+										<blockquote>
+										<p class="text-sizei">
+											
+										… Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua et dolore magna aliqua et dol ut labore et dolore 
+
+										</p>
+										</blockquote>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assets/js/main.js" ></script>
+	</body>
+</html>
